@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import './room.module.css';
+import './Room.module.css';
 
 export default class Room extends Component{
+    // state = 
+    // {
+    //     id: "bathroom"
+    // }
     render() {
         return (
-            <div>Microphone</div>
+            <h1>Room</h1>
         );
     }
 }

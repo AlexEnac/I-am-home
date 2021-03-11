@@ -1,10 +1,17 @@
-import React, { Component } from 'react';
-import './light.module.css';
+import React, { Component } from "react";
+import { TURN_OFF, TURN_ON } from "../../redux/const";
+import "./Light.module.css";
 
 const Light = () => {
-    return (
-        <div>light</div>
-    )
-}
+  const [isTurnnedOn, setIsTurnnedOn] = useState(false);
+
+  const handleOnClick = () => {
+    setIsTurnnedOn(!isTurnnedOn);
+  };
+
+  const handleRequest = (action) => {};
+
+  return <div></div>;
+};
 
 export default Light;

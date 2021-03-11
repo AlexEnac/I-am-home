@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './tv.module.css';
+import './Tv.module.css';
 
 export default class TV extends Component{
     render() {

@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Microphone, Light, Room, TV } from './components';
+import React, { useState, Component, useEffect } from "react";
+import "./App.css";
+import { Light, TV, Room, Microphone } from "./components";
+import data from "./action.json";
+import * as Constants from "./redux/const";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-          <TV/>
-          <Light/>
-        </p>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="app">
+      <Light />
+      <TV />
+      <Microphone />
+    </div>
+  );
 }
 
 export default App;
